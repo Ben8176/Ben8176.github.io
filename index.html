@@ -1,1 +1,46 @@
-<p>Hello world</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navigation -->
+    <nav class="bg-white p-4 shadow">
+        <div class="container mx-auto">
+            <a href="#" class="text-xl font-semibold">Ben Garofalo</a>
+            <div class="float-right">
+                <a href="#" class="ml-4 text-gray-700">Home</a>
+                <a href="#" class="ml-4 text-gray-700">Projects</a>
+                <a href="#" class="ml-4 text-gray-700">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile & Description -->
+    <section class="mt-16 container mx-auto text-center">
+        <img src="pics/ben.jpg" alt="Your Name" class="w-32 h-32 mx-auto rounded-full shadow">
+        <h1 class="mt-6 text-3xl font-bold">Ben</h1>
+        <p class="mt-4 text-gray-600">I love fast cars.</p>
+    </section>
+
+    <!-- Gallery of Projects -->
+    <section class="mt-16 container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <!-- Repeat this block for each project -->
+        <div class="bg-white p-4 shadow rounded">
+            <img src="pics/smudge.jpg" alt="Project Name" class="w-full h-48 object-cover rounded-t">
+            <h2 class="mt-4 text-xl font-semibold">Project Name</h2>
+            <p class="mt-2 text-gray-600">Brief description of the project.</p>
+            <a href="#" class="mt-4 inline-block text-blue-500">Read more</a>
+        </div>
+        <!-- End of project block -->
+    </section>
+
+</body>
+
+</html>
