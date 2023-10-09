@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben's Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
 <body class="bg-gray-100">
@@ -35,7 +36,7 @@
     <section class="mt-16 container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         <!-- Repeat this block for each project -->
         <div class="bg-white p-4 shadow rounded">
-            <img src="pics/smudge.jpg" alt="Project Name" class="w-full h-48 object-cover rounded-t">
+            <img src="pics/bike.jpg" alt="Project Name" class="w-full h-48 object-cover rounded-t">
             <h2 class="mt-4 text-xl font-semibold">Electric Mountain Bike</h2>
             <p class="mt-2 text-gray-600">A converted hardtail with 1hp under continuous improvement!</p>
             <!-- <a href="#" class="mt-4 inline-block text-blue-500">Read more</a> -->
@@ -61,6 +62,24 @@
         <!-- End of project block -->
     </section>
 
+    <!-- Modal Structure -->
+    <div id="projectModal" class="fixed inset-0 flex items-center justify-center z-50 hidden">
+        <div class="modal-content bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+            <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
+                <span class="mb-1">Close</span>
+                <div class="w-5 h-5 p-1 bg-white rounded-full">
+                    <div class="modal-close-button w-10 h-10 bg-black rounded-full"></div>
+                </div>
+            </div>
+            <div class="modal-body py-4 text-left px-6">
+                <!-- Dynamic Content goes here -->
+            </div>
+        </div>
+    </div>
+
+
 </body>
+
+<script src="projectModals.js"></script>
 
 </html>
