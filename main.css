@@ -1,8 +1,4 @@
-body.blur {
-    filter: blur(5px); /* Adjust the pixel value as needed */
-}
-
 /* This ensures that the modal itself isn’t blurred */
-body.blur #projectModal {
-    filter: none;
+body.blur > *:not(#projectModal) {
+    filter: blur(5px);
 }
