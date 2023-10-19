@@ -17,11 +17,11 @@ function closeModal() {
 closeBtn.addEventListener('click', closeModal);
 
 // Event listeners for project tiles
-// set projectTiles to the element with this class:
-let projectTiles = document.querySelectorAll('.bg-white.p-4.shadow.rounded'); // Adjust this selector if needed
+let projectTiles = document.querySelectorAll('.bg-white.p-4.shadow.rounded');
 projectTiles.forEach(tile => {
     tile.addEventListener('click', () => {
-        let content = tile.innerHTML;
+        let modalContentID = tile.getAttribute('data-modal-content');
+        let content = document.getElementById(modalContentID).innerHTML;
         openModal(content);
     });
 });
