@@ -12,7 +12,7 @@
 <body class="bg-gray-100">
 
     <!-- Navigation -->
-    <nav class="bg-white p-4 shadow">
+    <nav class="bg-white p-4 shadow hidden">
         <div class="container mx-auto">
             <a href="#" class="text-xl font-semibold">Ben Garofalo</a>
             <div class="float-right">
@@ -25,7 +25,7 @@
 
     <!-- Profile & Description -->
     <section class="mt-16 container mx-auto justify-start">
-        <img src="pics/benpfp.jpg" alt="Ben Profile Picture" class="w-32 h-32 rounded-full shadow object-cover">
+        <img src="pics/benpfp.jpg" alt="Ben Profile Picture" class="w-64 h-64 rounded-full shadow object-cover">
         <h1 class="mt-6 text-3xl font-bold">Ben Garofalo</h1>
         <p class="mt-4 text-gray-600">I love fast cars.
             This website is currently under construction! 🏗️🚧👷👷‍♂️👷‍♀️
@@ -33,6 +33,7 @@
     </section>
 
     <!-- Gallery of Projects -->
+    <h1 class="text-left mt-8 ml-16 text-3xl font-bold mb-2">My Projects</h1>
     <section class="mt-16 container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
         <!-- Repeat this block for each project -->
         <div class="bg-white p-4 shadow rounded" data-modal-content="bikeModalContent">
@@ -43,9 +44,9 @@
         </div>
         <!-- Hidden Modal Content for the above Project Tile -->
         <div id="bikeModalContent" class="hidden">
-            <h3>Converted Mountain Bike</h3>
+            <h2>Converted Mountain Bike</h2>
             <img src="pics/bike.jpg" alt="Electric Mountain Bike with stickers covering it">
-            <p>This is my electric mountain bike which is a converted Haro hardtail using a Bafang 750W motor + controller and a 11000 mAh 52V battery pack.</p>
+            <p>This is my electric mountain bike which is a converted Haro hardtail using a Bafang 750W motor + controller and a 11000 mAh 52V battery pack. I built this over the summer of 2021 and have been using it to speed around campus. It has a top speed of 22 mph on flat ground!</p>
             <!-- Add any other content you want for this modal -->
         </div>
 
@@ -77,8 +78,8 @@
         <div class="modal-content bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
             <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
                 <span class="mb-1">Close</span>
-                <div class="w-5 h-5 p-1 bg-white rounded-full">
-                    <div class="modal-close-button w-10 h-10 bg-black rounded-full"></div>
+                <div class="w-5 h-5 p-1 bg-transparent rounded-full">
+                    <span class="modal-close-button">&times;</span>
                 </div>
             </div>
             <div class="modal-body py-4 text-left px-6">

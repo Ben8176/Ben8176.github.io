@@ -2,3 +2,9 @@
 body.blur > *:not(#projectModal) {
     filter: blur(5px);
 }
+
+.modal-close-button {
+    font-size: 1.5rem; /* Adjust size as needed */
+    color: black;
+}
+
