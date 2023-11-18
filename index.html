@@ -1,97 +1,159 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ben's Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="main.css">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
 
-<body class="bg-gray-100">
-
+  <body class="bg-gray-100">
     <!-- Navigation -->
-    <nav class="bg-white p-4 shadow hidden">
-        <div class="container mx-auto">
-            <a href="#" class="text-xl font-semibold">Ben Garofalo</a>
-            <div class="float-right">
-                <a href="#" class="ml-4 text-gray-700">Home</a>
-                <a href="#" class="ml-4 text-gray-700">Projects</a>
-                <a href="#" class="ml-4 text-gray-700">Contact</a>
-            </div>
+    <nav class="bg-white p-4 shadow">
+      <div class="container mx-auto">
+        <a href="#" class="text-xl font-semibold">bengarofalo.com</a>
+        <div class="float-right">
+          <a href="#" class="ml-4 text-gray-700">Home</a>
+          <a href="coollinks.html" class="ml-4 text-gray-700">Cool Links</a>
         </div>
+      </div>
     </nav>
 
     <!-- Profile & Description -->
     <section class="mt-16 container mx-auto justify-start">
-        <img src="pics/benpfp.jpg" alt="Ben Profile Picture" class="w-64 h-64 rounded-full shadow object-cover">
-        <h1 class="mt-6 text-3xl font-bold">Ben Garofalo</h1>
-        <p class="mt-4 text-gray-600">I love fast cars.
-            This website is currently under construction! 🏗️🚧👷👷‍♂️👷‍♀️
-            https://www.hardwareinterviews.fyi/
-        </p>
+      <div class="flex justify-center">
+        <div class="grid grid-flow-col auto-cols-auto gap-8 max-w-4xl mx-auto">
+          <div class="flex justify-center">
+            <img
+              src="pics/benpfp.jpg"
+              alt="Ben Profile Picture"
+              class="w-64 h-64 rounded-full shadow object-cover"
+            />
+          </div>
+          <div class="">
+            <h1 class="mt-6 text-3xl font-bold">Ben Garofalo</h1>
+            <p class="mt-4 text-gray-600">
+              Hello! My name is Ben. I'm a highly driven mechanical engineering
+              student at UC San Diego with a passion for robotics and
+              entrepreneurship.
+            </p>
+            <br/>
+            <p class="mt-4 text-gray-600">
+                Currently working on: <br>
+                - Camera gimbal system for <a href="https://tuas.ucsd.edu/">Triton UAS</a><br>
+                - Robotic gripper for <a href="https://www.ucsdarclab.com/">ARCLab</a><br>
+                - Aeroponics system <br>
+                - Vertiband - exercise product for people with ulnar nerve damage
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Gallery of Projects -->
     <h1 class="text-left mt-8 ml-16 text-3xl font-bold mb-2">My Projects</h1>
-    <section class="mt-16 container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
-        <!-- Repeat this block for each project -->
-        <div class="bg-white p-4 shadow rounded" data-modal-content="bikeModalContent">
-            <img src="pics/bike.jpg" alt="Project Name" class="w-full h-48 object-cover rounded-t">
-            <h2 class="mt-4 text-xl font-semibold">Electric Mountain Bike</h2>
-            <p class="mt-2 text-gray-600">A converted hardtail with 1hp under continuous improvement!</p>
-            <!-- <a href="#" class="mt-4 inline-block text-blue-500">Read more</a> -->
-        </div>
-        <!-- Hidden Modal Content for the above Project Tile -->
-        <div id="bikeModalContent" class="hidden">
-            <h2>Converted Mountain Bike</h2>
-            <img src="pics/bike.jpg" alt="Electric Mountain Bike with stickers covering it">
-            <p>This is my electric mountain bike which is a converted Haro hardtail using a Bafang 750W motor + controller and a 11000 mAh 52V battery pack. I built this over the summer of 2021 and have been using it to speed around campus. It has a top speed of 22 mph on flat ground!</p>
-            <!-- Add any other content you want for this modal -->
-        </div>
+    <section
+      class="mt-16 container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
+    >
+      <!-- Repeat this block for each project -->
+      <div
+        class="bg-white p-4 shadow rounded"
+        data-modal-content="bikeModalContent"
+      >
+        <img
+          src="pics/bike.jpg"
+          alt="Project Name"
+          class="w-full h-48 object-cover rounded-t"
+        />
+        <h2 class="mt-4 text-xl font-semibold">Electric Mountain Bike</h2>
+        <p class="mt-2 text-gray-600">
+          A converted hardtail with 1hp under continuous improvement!
+        </p>
+        <!-- <a href="#" class="mt-4 inline-block text-blue-500">Read more</a> -->
+      </div>
+      <!-- Hidden Modal Content for the above Project Tile -->
+      <div id="bikeModalContent" class="hidden">
+        <h2>Converted Mountain Bike</h2>
+        <img
+          src="pics/bike.jpg"
+          alt="Electric Mountain Bike with stickers covering it"
+        />
+        <p>
+          This is my electric mountain bike which is a converted Haro hardtail
+          using a Bafang 750W motor + controller and a 11000 mAh 52V battery
+          pack. I built this over the summer of 2021 and have been using it to
+          speed around campus. It has a top speed of 22 mph on flat ground!
+        </p>
+        <!-- Add any other content you want for this modal -->
+      </div>
 
-
-
-        <div class="bg-white p-4 shadow rounded">
-            <img src="pics/of.jpg" alt="Project Name" class="w-full h-48 object-cover rounded-t">
-            <h2 class="mt-4 text-xl font-semibold">Optical Flow for UAVs</h2>
-            <p class="mt-2 text-gray-600">Investigated optical flow for GPS-denied operations as part of my 2023 summer internship.</p>
-            <!-- <a href="#" class="mt-4 inline-block text-blue-500">Read more</a> -->
-        </div>
-        <div class="bg-white p-4 shadow rounded">
-            <img src="pics/escs.jpg" alt="Project Name" class="w-full h-48 object-cover rounded-t">
-            <h2 class="mt-4 text-xl font-semibold">ESC monitoring</h2>
-            <p class="mt-2 text-gray-600">Developed ESC health checking system in C++ for my 2022 summer internship.</p>
-            <!-- <a href="#" class="mt-4 inline-block text-blue-500">Read more</a> -->
-        </div>
-        <div class="bg-white p-4 shadow rounded">
-            <img src="pics/mae3.jpg" alt="Project Name" class="w-full h-48 object-cover rounded-t">
-            <h2 class="mt-4 text-xl font-semibold">Robot Design - 1st place</h2>
-            <p class="mt-2 text-gray-600">Made the best robot and won in MAE 3, Intro to Mechanical Design.</p>
-            <!-- <a href="#" class="mt-4 inline-block text-blue-500">Read more</a> -->
-        </div>
-        <!-- End of project block -->
+      <div class="bg-white p-4 shadow rounded">
+        <img
+          src="pics/of.jpg"
+          alt="Project Name"
+          class="w-full h-48 object-cover rounded-t"
+        />
+        <h2 class="mt-4 text-xl font-semibold">Optical Flow for UAVs</h2>
+        <p class="mt-2 text-gray-600">
+          Investigated optical flow for GPS-denied operations as part of my 2023
+          summer internship.
+        </p>
+        <!-- <a href="#" class="mt-4 inline-block text-blue-500">Read more</a> -->
+      </div>
+      <div class="bg-white p-4 shadow rounded">
+        <img
+          src="pics/escs.jpg"
+          alt="Project Name"
+          class="w-full h-48 object-cover rounded-t"
+        />
+        <h2 class="mt-4 text-xl font-semibold">ESC monitoring</h2>
+        <p class="mt-2 text-gray-600">
+          Developed ESC health checking system in C++ for my 2022 summer
+          internship.
+        </p>
+        <!-- <a href="#" class="mt-4 inline-block text-blue-500">Read more</a> -->
+      </div>
+      <div class="bg-white p-4 shadow rounded">
+        <img
+          src="pics/mae3.jpg"
+          alt="Project Name"
+          class="w-full h-48 object-cover rounded-t"
+        />
+        <h2 class="mt-4 text-xl font-semibold">Robot Design - 1st place</h2>
+        <p class="mt-2 text-gray-600">
+          Made the best robot and won in MAE 3, Intro to Mechanical Design.
+        </p>
+        <!-- <a href="#" class="mt-4 inline-block text-blue-500">Read more</a> -->
+      </div>
+      <!-- End of project block -->
     </section>
 
     <!-- Modal Structure -->
-    <div id="projectModal" class="fixed inset-0 flex items-center justify-center z-50 hidden">
-        <div class="modal-content bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
-            <div class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50">
-                <span class="mb-1">Close</span>
-                <div class="w-5 h-5 p-1 bg-transparent rounded-full">
-                    <span class="modal-close-button">&times;</span>
-                </div>
-            </div>
-            <div class="modal-body py-4 text-left px-6">
-                <!-- Dynamic Content goes here -->
-            </div>
+    <div
+      id="projectModal"
+      class="fixed inset-0 flex items-center justify-center z-50 hidden"
+    >
+      <div
+        class="modal-content bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto"
+      >
+        <div
+          class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50"
+        >
+          <span class="mb-1">Close</span>
+          <div class="w-5 h-5 p-1 bg-transparent rounded-full">
+            <span class="modal-close-button">&times;</span>
+          </div>
         </div>
+        <div class="modal-body py-4 text-left px-6">
+          <!-- Dynamic Content goes here -->
+        </div>
+      </div>
     </div>
+  </body>
 
-
-</body>
-
-<script src="projectModals.js"></script>
-
+  <script src="projectModals.js"></script>
 </html>
