@@ -57,178 +57,71 @@
     <!-- Gallery of Projects -->
     <h1 class="text-left mt-8 ml-16 text-3xl font-bold mb-2">My Projects</h1>
     <section
-      class="mt-16 container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
+      class="mt-16 container mx-auto grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
     >
 
       <!-- MOUNTAIN BIKE TILE -->
-      <div
-        class="bg-white p-4 shadow rounded tile"
-        data-modal-content="bikeModalContent"
-      >
+      <a href="bike.html">
+        <div class="bg-white p-4 shadow rounded tile">
         <img
           src="pics/bike.jpg"
           alt="Project Name"
-          class="w-full h-48 object-cover rounded-t"
+          class="w-full h-64 object-cover rounded-t"
         />
         <h2 class="mt-4 text-xl font-semibold">Electric Mountain Bike</h2>
-        <p class="mt-2 text-gray-600">
-          A converted hardtail with 1hp under continuous improvement!
-          <br/>
-          Read more...
-        </p>
-      </div>
-      <!-- Hidden Modal Content for the above Project Tile -->
-      <div id="bikeModalContent" class="hidden">
-        <h2>Converted Mountain Bike</h2>
-        <img
-          src="pics/bike.jpg"
-          alt="Electric Mountain Bike with stickers covering it"
-          class="max-w-md"
-        />
-        <p>
-          <br/>
-          This is my electric mountain bike which is a converted Haro hardtail
-          using a Bafang 750W motor + controller and a 11000 mAh 52V battery
-          pack. I built this over the summer of 2021 and have been using it to
-          speed around campus. It has a top speed of 22 mph on flat ground!
-        </p>
-      </div>
+        </div>
+      </a>
 
 
       <!-- OPTICAL FLOW TILE-->
-      <div class="bg-white p-4 shadow rounded tile" data-modal-content="ofModalContent">
+      <a href="opticalflow.html">
+      <div class="bg-white p-4 shadow rounded tile">
         <img
           src="pics/of.jpg"
           alt="Optical Flow on a drone"
-          class="w-full h-48 object-cover rounded-t"
+          class="w-full h-64 object-cover rounded-t"
         />
         <h2 class="mt-4 text-xl font-semibold">Optical Flow for UAVs</h2>
-        <p class="mt-2 text-gray-600">
-          Investigated optical flow for GPS-denied operations as part of my 2023
-          summer internship.
-          <br/>
-          Read more...
-        </p>
       </div>
-      <!-- Hidden Modal Content for the above Project Tile -->
-      <div id="ofModalContent" class="hidden">
-        <h2 class="text-xl mt-4 mb-4">Optical Flow Investigation</h2>
-        <img
-          src="pics/optflow.png"
-          alt="Optical flow setup on drone"
-          class="w-64"
-        />
-        <p class="mt-4 mb-4">
-          Over the summer of 2023, I worked with several other engineers to investigate options for GPS-denied UAV station keeping. 
-        </p>
-        <img src="pics/openMV.png" alt="openMV optical flow sensor" class="w-32"/>
-        <p class="mt-4 mb-4">
-          One of the optical flow sensors that was investigated was the openMV because of its open-source optical flow implementation in micropython. 
-        </p>
-      </div>
+      </a>
 
       <!-- ESCS PROJECT-->
-      <div class="bg-white p-4 shadow rounded tile" data-modal-content="escModalContent">
+      <a href="escs.html">
+      <div class="bg-white p-4 shadow rounded tile">
         <img
           src="pics/escs.jpg"
           alt="ESCs being tested"
-          class="w-full h-48 object-cover rounded-t"
+          class="w-full h-64 object-cover rounded-t"
         />
         <h2 class="mt-4 text-xl font-semibold">ESC monitoring</h2>
-        <p class="mt-2 text-gray-600">
-          Developed ESC health checking system in C++ for my 2022 summer
-          internship.
-          <br/>
-          Read more...
-        </p>
       </div>
-      <!-- Hidden Modal Content for the above Project Tile -->
-      <div id="escModalContent" class="hidden">
-        <h2 class="text-xl mt-4 mb-4">Firmware for UAV Health</h2>
-        <img
-          src="pics/escpotting.png"
-          alt="ESCs being potted with epoxy"
-          class="w-64"
-        />
-        <p class="mt-4 mb-4">
-          Over the summer of 2022 I worked with ESCs and Ardupilot autopilot firmware. My goal was to add diagnostic information to a ground station HUD
-          by having our ESCs report information about voltage and connectivity over CAN bus. 
-        </p>
-      </div>
+      </a>
 
-
-      <div class="bg-white p-4 shadow rounded tile"
-      data-modal-content="robotModalContent">
+      <!-- MAE3 ROBOT PROJECT -->
+      <a href="mae3.html">
+      <div class="bg-white p-4 shadow rounded tile">
         <img
           src="pics/mae3.jpg"
           alt="Claw Robot"
-          class="w-full h-48 object-cover rounded-t"
+          class="w-full h-64 object-cover rounded-t"
         />
-        <h2 class="mt-4 text-xl font-semibold">Robot Competition - 1st place</h2>
-        <p class="mt-2 text-gray-600">
-          Built a robot with a claw and 4-bar in under 3 weeks.
-          <br/>
-          Read more...
-        </p>
+        <h2 class="mt-4 text-xl font-semibold">Claw Robot (1st place)</h2>
       </div>
-      <!-- Hidden Modal Content for the above Project Tile -->
-      <div id="robotModalContent" class="hidden bg-red-400 max-w-4xl mx-auto overflow-y-auto">
-        <h2 class="text-xl mt-4 mb-4">Claw Robot</h2>
-            <img
-            src="pics/mae3robot.png"
-            alt="Claw robot"
-            class="w-64"
-          />
-        
-        <p class="mt-4 mb-4">
-          My team and I built a robot with a 3 pronged claw and 4-bar lift using a limited selection of parts. The competition was for the
-          Intro to Mechanical Design class, and the objective of the game was to retrieve objects with different properties from 4 locations
-          at different heights. 
-          <br/>
-          <br/>
-          <img
-            src="pics/drivetrain.png"
-            alt="robot drivetrain"
-            class="max-w-xl"
-          />
-          The component that I did the most work on was the drivetrain. Given two high-speed and low torque motors, I had to design a method
-          to allow our robot to move around the game field. I opted for a friction drive that held the motor shafts onto the wheels as it was
-          a straightforward power transmission that created a large gear ratio between the motor shaft and the wheel. 
-          <br/>
-
-        </p>
-      </div>
+      </a>
 
       <!-- Rhetoric TILE -->
+      <a href="rhetoric.html">
       <div
         class="bg-white p-4 shadow rounded tile"
-        data-modal-content="rhetoricModalContent"
       >
         <img
           src="pics/rhetoric.png"
           alt="Rhetoric Website"
-          class="w-full h-48 object-cover rounded-t"
+          class="w-full h-64 object-cover rounded-t"
         />
         <h2 class="mt-4 text-xl font-semibold">Rhetoric</h2>
-        <p class="mt-2 text-gray-600">
-          An AI interview prep site that uses tone analysis and LLMs to help you practice for interviews.
-          <br/>
-          Read more...
-        </p>
       </div>
-      <!-- Hidden Modal Content for the above Project Tile -->
-      <div id="rhetoricModalContent" class="hidden">
-        <h2 class="text-xl mt-4 mb-4">Rhetoric</h2>
-        <img
-          src="pics/rhetoricdemo.png"
-          alt="Rhetoric web app"
-        />
-        <p class="mt-4 mb-4">
-          Rhetoric is an AI interview prep website that I built with my team during Calhacks 2023, where we stayed up for 48 hours
-          learning and coding in Python and Javascript. During the process of creating this app, I learned a lot about working
-          effectively as a team and building something from the ground up. 
-        </p>
-      </div>
+      </a>
       <!-- End of project block -->
     </section>
 
