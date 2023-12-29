@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Optical Flow Project</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body class="bg-gray-100">
+
+    <!-- Navigation -->
+    <nav class="bg-white p-4 shadow menu">
+        <div class="container mx-auto">
+          <a href="index.html" class="text-xl font-semibold">bengarofalo.com</a>
+          <div class="float-right">
+            <a href="index.html" class="ml-4 text-gray-700">Home</a>
+            <a href="#" class="ml-4 text-gray-700">Cool Links</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="flex flex-col items-center mt-16 mb-16 mx-auto max-w-3xl">
+            <h1 class="text-3xl">Optical Flow for Station-Keeping</h1>
+            <br />
+
+            <img
+                src="pics/of.jpg"
+                alt=""
+                class="max-w-md"
+            />
+
+            <img
+          src="pics/optflow.png"
+          alt="Optical flow setup on drone"
+          class="w-64"
+        />
+        <p class="mt-4 mb-4">
+          Over the summer of 2023, I worked with several other engineers to investigate options for GPS-denied UAV station keeping. 
+        </p>
+        <img src="pics/openMV.png" alt="openMV optical flow sensor" class="w-32"/>
+        <p class="mt-4 mb-4">
+          One of the optical flow sensors that was investigated was the openMV because of its open-source optical flow implementation in micropython. 
+        </p>
+
+
+        </div>
+  </body>
+</html>
+
