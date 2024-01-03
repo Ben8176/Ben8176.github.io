@@ -27,19 +27,31 @@
             <h1 class="text-3xl">Automatic Pre-flight Checks Using ESCs</h1>
             <br />
 
-            <img
+            <!-- <img
                 src="pics/escs.jpg"
                 alt="Speed controllers being tested and validated"
                 class="max-w-md"
-            />
+            /> -->
+            <picture>
+                <source type="image/webp" srcset="pics/escs.webp">
+                <source type="image/jpeg" srcset="pics/escs.jpg">
+                <img src="pics/escs.jpg" class="">
+            </picture>
 
             <br />
 
-            <img
-          src="pics/escpotting.png"
-          alt="ESCs being potted with epoxy"
-          class="w-64"
-        />
+          <!-- <img
+            src="pics/escpotting.png"
+            alt="ESCs being potted with epoxy"
+            class="w-64"
+          /> -->
+
+          <picture>
+                <source type="image/webp" srcset="pics/escpotting.webp">
+                <source type="image/jpeg" srcset="pics/escpotting.jpg">
+                <img src="pics/escpotting.jpg" class="">
+          </picture>
+
         <p class="mt-4 mb-4">
           Over the summer of 2022 I worked with ESCs and Ardupilot autopilot firmware. My goal was to add diagnostic information to a ground station HUD
           by having our ESCs report information about voltage and connectivity over CAN bus. 

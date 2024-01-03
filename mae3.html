@@ -27,11 +27,17 @@
             <h1 class="text-3xl">Designed and Built a Claw Robot</h1>
             <br />
 
-                <img
-            src="pics/mae3robot.png"
-            alt="Claw robot"
-            class="w-64"
-          />
+            <!-- <img
+              src="pics/mae3robot.png"
+              alt="Claw robot"
+              class="w-64"
+            /> -->
+
+            <picture>
+                <source type="image/webp" srcset="pics/mae3robot.webp">
+                <source type="image/png" srcset="pics/mae3robot.png">
+                <img src="pics/mae3robot.png" class="w-64">
+            </picture>
         
         <p class="mt-4 mb-4">
           My team and I built a robot with a 3 pronged claw and 4-bar lift using a limited selection of parts. The competition was for the
@@ -39,11 +45,18 @@
           at different heights. 
           <br/>
           <br/>
-          <img
+          <!-- <img
             src="pics/drivetrain.png"
             alt="robot drivetrain"
             class="max-w-xl"
-          />
+          /> -->
+
+          <picture>
+                <source type="image/webp" srcset="pics/drivetrain.webp">
+                <source type="image/png" srcset="pics/drivetrain.png">
+                <img src="pics/drivetrain.png" class="max-w-xl">
+          </picture>
+
           The component that I did the most work on was the drivetrain. Given two high-speed and low torque motors, I had to design a method
           to allow our robot to move around the game field. I opted for a friction drive that held the motor shafts onto the wheels as it was
           a straightforward power transmission that created a large gear ratio between the motor shaft and the wheel. 
