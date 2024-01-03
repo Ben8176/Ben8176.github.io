@@ -28,11 +28,16 @@
       <div class="flex justify-center">
         <div class="grid grid-flow-col auto-cols-auto gap-8 max-w-4xl mx-auto">
           <div class="flex justify-center">
-            <img
+            <!-- <img
               src="pics/benpfp.jpg"
               alt="Ben Profile Picture"
               class="w-64 h-64 rounded-full shadow object-cover"
-            />
+            /> -->
+            <picture class="w-64 h-64 rounded-full shadow object-cover">
+              <source type="image/webp" srcset="pics/benpfp.webp" class="rounded-full">
+              <source type="image/jpeg" srcset="pics/benpfp.jpg" class="rounded-full">
+              <!-- <img src="pics/benpfp.jpg" class="rounded-full"> -->
+            </picture>
           </div>
           <div class="">
             <h1 class="mt-6 text-3xl font-bold">Ben Garofalo</h1>
@@ -125,27 +130,5 @@
       <!-- End of project block -->
     </section>
 
-    <!-- Modal Structure -->
-    <div
-      id="projectModal"
-      class="fixed inset-0 flex items-center justify-center z-50 hidden"
-    >
-      <div
-        class="modal-content bg-white max-w-3xl mx-auto rounded shadow-lg z-50 overflow-y-auto"
-      >
-        <div
-          class="modal-close absolute top-0 right-0 cursor-pointer flex flex-col items-center mt-4 mr-4 text-white text-sm z-50"
-        >
-          <div class="w-5 h-5 p-1 bg-transparent rounded-full">
-            <span class="modal-close-button">&times;</span>
-          </div>
-        </div>
-        <div class="modal-body py-4 text-left px-6">
-          <!-- Dynamic Content goes here -->
-        </div>
-      </div>
-    </div>
   </body>
-
-  <script src="projectModals.js"></script>
 </html>
