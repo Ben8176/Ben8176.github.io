@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body class="bg-gray-100">
+
+    <!-- Navigation -->
+    <nav class="bg-white p-4 shadow menu">
+        <div class="container mx-auto">
+          <a href="index.html" class="text-xl font-semibold">bengarofalo.com</a>
+          <div class="float-right">
+            <a href="index.html" class="ml-4 text-gray-700">Home</a>
+            <a href="#" class="ml-4 text-gray-700">Cool Links</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="flex flex-col items-center mb-16 mt-16 mx-auto max-w-5xl">
+            <h1 class="text-3xl">Odometry Position Estimation for Wheeled Robots</h1>
+            <br />
+            
+            <picture>
+                <source type="image/webp" srcset="pics/odorow.webp">
+                <source type="image/jpeg" srcset="pics/odorow.jpg">
+                <img src="pics/odorow.jpg" class="">
+            </picture>
+
+            <br />
+
+        <p class="mt-4 mb-4">
+          I developed a wheeled robot position estimating system to use on my team's FIRST robots. In order to have a reasonably consistent autonomous operation,
+          high quality and frequent position estimates are required. Motor encoders on the drivetrain motors would have been sufficient, but they don't account for
+          wheel slip under acceleration and are low resolution.
+
+          <br/>
+          <br/>
+
+          In order to get optimal position estimates, I developed an odometry system that consisted of 3 omni-wheels with magnetic encoders. Since our robot was holonomic,
+          we needed two odometry modules facing forward to capture any differential rotation of the robot chassis, as well as forward translation. The third odometry module was positioned normal to the other modules to capture lateral translations. An example of the modules oriented normal to each other below:
+        </p>
+
+        <picture>
+                <source type="image/webp" srcset="pics/odo2.webp">
+                <source type="image/jpeg" srcset="pics/odo2.jpg">
+                <img src="pics/odo2.jpg" class="">
+          </picture>
+
+        <br/>
+
+        <h2 class="text-2xl">Hardware</h2>
+        <br/>
+
+        <p>
+            The first iteration of odometry modules were made with 3d-printed PLA and used optical encoders to capture rotations of the 38cm omni wheels. A rubber band was used to spring the modules down into the ground in attempt to maintain constant contact over a non-uniform surface.
+
+            <br/>
+            <br/>
+
+            This iteration had several issues.
+
+            <br/>
+            <br/>
+
+            I found that the optical encoders we were using were extremely susceptible to dust, and the dust would scratch up the optical sensor, rendering the encoder useless.
+            <br/>
+            <br/>
+
+            
+
+        </p>
+        <!-- lil gallery with a flex container -->
+        <div class="flex max-h-64 space-x-4 justify-center">
+            <picture>
+                <source type="image/webp" srcset="pics/odoclose.webp">
+                <source type="image/jpeg" srcset="pics/odoclose.jpg">
+                <img src="pics/odoclose.jpg" class="object-cover h-full w-full">
+            </picture>
+            <picture>
+                <source type="image/webp" srcset="pics/odobreak.webp">
+                <source type="image/jpeg" srcset="pics/odobreak.jpg">
+                <img src="pics/odobreak.jpg" class="object-cover h-full w-full">
+            </picture>
+            <picture>
+                <source type="image/webp" srcset="pics/odo3.webp">
+                <source type="image/jpeg" srcset="pics/odo3.jpg">
+                <img src="pics/odo3.jpg" class="object-cover h-full w-full">
+            </picture>
+        </div>
+
+        <p>
+            <br/>
+            I later switched to magnetic encoders, which were more robust and resistant to dust. On top of that, we switched to springs to provide a stronger force into the ground so that the odometry modules would never miss a movement. This was critical to the accuracy of the position estimate as the recorded motion of the odometry wheels were continuously being integrated since the initial position of the robot (0,0). Position drift could never be elminated, but having high resolution encoders and rigid wheel housing helps (this is where we switched to larger, blue PLA housing).
+        </p>
+
+        <br/>
+
+        <h2 class="text-2xl">Software</h2>
+
+        <br/>
+            
+        <p>
+            I wrote the software in Java to get odometry wheel encoder readings, convert them to wheel positions, and then perform inverse kinematics to get the robot frame position changes. This was greatly assisted by the papers <a href="https://rr.brott.dev/papers/Mobile_Robot_Kinematics_for_FTC.html">Mobile Robot Kinematics for FTC</a> by Ryan Brott and <a href="https://file.tavsys.net/control/controls-engineering-in-frc.pdf">Controls Engineering in FRC</a> by Tyler Veness.
+        </p>
+        
+        <br/>
+
+        <picture>
+            <source type="image/webp" srcset="pics/odomblock.webp">
+            <source type="image/jpeg" srcset="pics/odomblock.jpg">
+            <img src="pics/odomblock.jpg" class="object-cover h-full w-full">
+        </picture>
+
+        </div>
+  </body>
+</html>
+

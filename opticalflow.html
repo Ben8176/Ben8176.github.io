@@ -23,50 +23,54 @@
         </div>
       </nav>
 
-      <div class="flex flex-col items-center mt-16 mb-16 mx-auto max-w-3xl">
-            <h1 class="text-3xl">Optical Flow for Station-Keeping</h1>
-            <br />
+      <div class="flex flex-col items-center mt-16 mb-16 mx-auto max-w-5xl">
+        <h1 class="text-3xl">Optical Flow for Station-Keeping</h1>
+        <br />
 
-            <!-- <img
-                src="pics/of.jpg"
-                alt=""
-                class="max-w-md"
-            /> -->
-            <picture>
-                <source type="image/webp" srcset="pics/of.webp">
-                <source type="image/jpeg" srcset="pics/of.jpg">
-                <img src="pics/of.jpg" class="max-w-md">
+        <picture>
+          <source type="image/webp" srcset="pics/of.webp">
+          <source type="image/jpeg" srcset="pics/of.jpg">
+          <img src="pics/of.jpg" class="max-w-md rounded-t rounded-b">
+
+        </picture>
+        <br/>
+        <p>
+          Over my 2023 summer internship at <a href="https://www.hoodtechmechanical.com/">Hood Tech Mechanical</a>, I investigated whether an optical flow system, consisting of a micro-camera running an optical flow algorithm and a laser rangefinder, could be used to allow station-keeping in a GPS-denied environment at 80m for thirty to ninety seconds. 
+          <br/> <br/>
+          Optical flow refers to the pattern of apparent motion of objects, surfaces, and edges in a visual scene caused by the relative motion between an observer and the scene. The idea behind the investigation was that an optical flow system may be able to track the planar position of a hovering UAV in the case where the GPS position estimate becomes unreliable, due to GPS jamming or otherwise.
+        </p>
+        <br/>
+        <!-- Flex gallery of two images  -->
+        <div class="flex max-h-72 space-x-4 justify-center">
+          <picture>
+            <source type="image/webp" srcset="pics/optflow.webp">
+            <source type="image/png" srcset="pics/optflow.png">
+            <img src="pics/optflow.png" class="w-64 h-full object-cover">
           </picture>
-
-          <!-- <img
-            src="pics/optflow.png"
-            alt="Optical flow setup on drone"
-            class="w-64"
-          /> -->
 
           <picture>
-                <source type="image/webp" srcset="pics/optflow.webp">
-                <source type="image/png" srcset="pics/optflow.png">
-                <img src="pics/optflow.png" class="w-64">
+            <source type="image/webp" srcset="pics/openMV.webp">
+            <source type="image/png" srcset="pics/openMV.png">
+            <img src="pics/openMV.png" class="w-full h-72 object-cover rounded-t">
           </picture>
-
-        <p class="mt-4 mb-4">
-          Over the summer of 2023, I worked with several other engineers to investigate options for GPS-denied UAV station keeping. 
-        </p>
-        <!-- <img src="pics/openMV.png" alt="openMV optical flow sensor" class="w-32"/> -->
-
-          <picture>
-                <source type="image/webp" srcset="pics/openMV.webp">
-                <source type="image/png" srcset="pics/openMV.png">
-                <img src="pics/openMV.png" class="w-full h-64 object-cover rounded-t">
-          </picture>
-
-        <p class="mt-4 mb-4">
-          One of the optical flow sensors that was investigated was the openMV because of its open-source optical flow implementation in micropython. 
-        </p>
-
-
         </div>
+        <br/>
+        <p>
+          In total, I identified, programmed, and tested 3 candidate long-range laser rangefinders and 2 optical flow cameras. Between the sensors themselves, system integration with the UAV, and the localization code on the autopilot, this project was constantly mired with challenges. Most were overcome! My usual day to day work on this project involved implementing different hardware and software hypotheses (eg: use of optics, calibration parameters, firmware changes) and then flight testing them in various wind conditions. I would then capture data from the flight logs and analyze it using MATLAB. 
+        </p>
+        <br/> <br/>
+
+        <picture>
+          <source type="image/webp" srcset="pics/of_rig.webp">
+          <source type="image/png" srcset="pics/of_rig.jpg">
+          <img src="pics/of_rig.jpg" class="w-full object-cover rounded-t">
+        </picture>
+        <br/>
+        
+        I also set up a MATLAB workflow which would automatically grab relevant data from the flight logs, perform some calculations to get absolute position drift from latitude/longitude, then automatically populate an Excel spreadsheet for each test flight. It was important to automate this procedure, as I eventually did around 100 test flights!
+        <br/> <br/>
+        Finally, I wrote a 9 page summary report which included key insights, testing methodology, and challenges encountered. I also wrote many smaller supplemental documents and guides as well as a 27 page continuous log of my activities. 
+      </div>
   </body>
 </html>
 
