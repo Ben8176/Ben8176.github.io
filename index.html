@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="main.css" />
   </head>
 
-  <body class="bg-gray-100">
+  <body class="bg-gray-100 mb-20">
     <!-- Navigation -->
     <nav class="bg-white p-4 shadow menu">
       <div class="container mx-auto">
@@ -29,10 +29,10 @@
         <div class="grid grid-flow-col auto-cols-auto gap-8 max-w-4xl mx-auto">
           <div class="flex justify-center">
             <!-- <img
-              src="pics/benpfp.jpg"
-              alt="Ben Profile Picture"
-              class="w-64 h-64 rounded-full shadow object-cover"
-            /> -->
+                  src="pics/benpfp.jpg"
+                  alt="Ben Profile Picture"
+                  class="w-64 h-64 rounded-full shadow object-cover"
+                /> -->
             <picture>
               <source type="image/webp" srcset="pics/benpfp.webp">
               <source type="image/jpeg" srcset="pics/benpfp.jpg">
@@ -42,25 +42,30 @@
           <div class="">
             <h1 class="mt-6 text-3xl font-bold">Ben Garofalo</h1>
             <p class="mt-4 text-gray-600">
-              Hello! My name is Ben. I'm a highly driven mechanical engineering
-              student at UC San Diego with a passion for robotics and
-              entrepreneurship.
+              Hello! My name is Ben.
+              </br>
+              </br>
+              Interests:
+              robotics & autonomous systems, agriculture, deep tech, wildfire management, energy, the natural world, good
+              books, underwater welding, plants, animals, bugs, geoengineering, manufacturing, sustainable living, learning
+              & cognition, shipyards and shipbuilding, art, music, humanity.
             </p>
-            <br/>
-            <p class="mt-4 text-gray-600">
-                Currently working on: <br>
-                - Camera gimbal system for <a href="https://tuas.ucsd.edu/">Triton UAS</a><br>
-                - Robotic gripper for <a href="https://www.ucsdarclab.com/">ARCLab</a><br>
-                - Aeroponics system <br>
-                - Vertiband - exercise product for people with ulnar nerve damage
+            <br />
+            <br />
+            <p>
+              Currently working on: <br>
+              - Building strong UAV systems at <a href="https://www.makerain.com">Rainmaker</a> <br />
             </p>
+            </br>
+            </br>
+    
           </div>
         </div>
       </div>
     </section>
 
     <!-- Gallery of Projects -->
-    <h1 class="text-left mt-8 ml-16 text-3xl font-bold mb-2">My Projects</h1>
+    <h1 class="text-left mt-8 ml-16 text-3xl font-bold mb-2">Past Projects (last update 02/14/24)</h1>
     <section
       class="mt-16 mb-16 container mx-auto grid grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
     >
@@ -114,7 +119,7 @@
                 <source type="image/jpeg" srcset="pics/mae3.jpg">
                 <img src="pics/mae3.jpg" class="w-full h-64 object-cover rounded-t">
           </picture>
-          <h2 class="mt-4 text-xl font-semibold">Claw Robot (1st place)</h2>
+          <h2 class="mt-4 text-xl font-semibold">Claw Robot</h2>
         </div>
       </a>
 
@@ -146,6 +151,28 @@
       </a>
       
       <!-- End of project block -->
+    </section>
+
+    <section class="ml-16 mr-16">
+      <h1 class="text-left mt-8 text-3xl font-bold mb-2"> Potential Future Projects (VERY EXCITING)</h1>
+      <p>Only projects under serious consideration / interest are listed. Mostly mechatronic and hardware based for now. Last updated 07/18/24</p>
+      <div class="p-2"></div>
+        <h2 class="text-xl font-semibold">Electric Motorcycle</h2>
+        <p>My electric bike is fine for commuting to campus (10 minutes) but I want more speed and power. I love sport motorbikes and I saw a full build of an electric motorcycle on youtube. It would be very fun to weld a frame but I'm also interested in building a carbon-fiber monocaque. In that case I wonder which parts of the bike would not be full carbon or fiberglass composite. 
+
+        <br/>
+        I would likely spend the most on the battery pack, so it's important to pick the right battery chemistry. LiPo for better surge power or lion for better energy density? Other cool features would be regen braking, launch mode, or building a custom motor controller board / firmware.
+        </p>
+        <br/>
+
+        <h2 class="text-xl font-semibold">Quad/hexacopter with 4dof arm payload</h2>
+        <p>Another one where I could just go insane on. Literally just a quadcopter with a 4+dof robot arm hanging underneath it. Would be extremely interesting to write the flight controller firmware for this as its akin to a pendulum system but with a shifting mass. Probably hundreds of commercial use cases, obviously the complexity could be pared down for most of them. I originally thought about this because I don't want my mom to fall off a ladder when stringing up christmas lights.</p>
+        <br/>
+        
+        <h2 class="text-xl font-semibold">Robotic Welding System</h2>
+        <p>I really like this idea because I think American manufacturing capacity needs to make a comeback and the only way to do this cheaply enough is to introduce heavy automation, see Hadrian, Rangeview, etc. You could do this a dumb and practical way with a gantry system similar to a 3d printer, but then again, arms are wayyyy cooler (and potentially more flexible for real world commercial deployments)</p>
+      </div>
+    </section>
     </section>
 
   </body>
